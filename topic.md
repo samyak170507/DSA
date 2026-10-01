@@ -1,0 +1,148 @@
+#TWO POINTERS
+
+ used in array and linkedlist
+ reduces work because more people
+ plus array is sorted or sorting it will make it easy
+ Merge/remove duplicate/rearrange
+ detect cycle in linkedlist
+ or if we hv to find pair/triplet/quadruple
+
+#SLIDING WINDOW 
+
+ used in array and string 
+ subarray or substring means continous and subsequence means non-continous
+ are we finding:-
+ max , min
+ longest , shortest
+ Sum / count / avg 
+ at most k / at least k / exactly k
+ - we have fixed and dynamic sliding window
+ - for variable size sliding window expand right and when condition become invalid
+  shrink window from left
+
+ -actually we can clasify it more for max window and min window and use this for max 
+ window (less thank equal to k find max window)
+
+ meanwhile in min window we have (>=k to find min window)
+ min me sahi milne pe shrink karte
+
+
+ #LINKED LIST PATTERN : FAST AND SLOW POINTERS
+
+ -used when to find cycle , loop or any repetitive behaviour pata karna hai and
+  middle of linkedlist
+ - start slow and fast from head move fast at 2x and while (fast!=null)
+
+  TO CHECK CYCLE/loop
+
+  while (fast!=null and fast.next!=null):
+
+      slow = next
+      fast = next next
+
+      if slow == fast:
+          return true
+  
+  return false
+
+  3------4--------5  5.next = null , but null.next is invalid
+
+  TO FIND STARTING OF loop 
+
+  break it into L1 L2 AND C-L2
+
+  L1 is from head to entry , L2 from entry to meeting point ,C is total nodes in cycle
+
+  slow chala L1+L2 aur fast chala L1+ nC + L2 
+
+  2 (L1+L2) = L1 + nC + L2
+  nC = L1 + L2
+  L1 = nC - L2
+
+  trick is now put slow again on head and slow fast ko same time lagega to entry
+
+  if cycle confirm put slow on head and run while slow!=fast and slow.next fast.next 
+  and then return slow
+
+  TO FIND MIDDLE OF linkedlist
+
+  start fast at 2x speed till null and return slow iykyk
+
+#KADANE'S ALGO
+
+  used when subarray given contigous waala and have to find its 
+  sum product or frequency
+
+  we can do this using sliding window but it wont work on negative numbers
+
+  template : 
+  at each index i find answer of ending at that index
+
+  ex : 1,2,3 ending at 3 will be 1,2,3 2,3 and 3
+
+  karna kaise h :
+  pehle ke answer me arr[i] jod do and ek pehle ka hata do sirf arr[i] rakho
+
+  example : -2 , 1 , 2 , -4 , 5
+
+          for i = 0 : best = a[0] ans = a[0] = -2
+
+          i - 1 contains best answer
+
+          for i = 1 :  -2+1 or 1 , now best = 1 , ans = 1
+
+          for i = 2 : 1+2 or 2 , now best = 3 , ans = 3
+
+          for i = 3 : 3-4 or -4 , now best = -1 , ans = 3
+
+          for i = 4 : -1+5 or 5 , now best = 5 , ans = 5
+  
+  note : learn to define and change your best ending 
+  revision : array questions of finding max min sum product frequency with a condition
+
+#PREFIX SUM 
+
+ flowchart: array/subarray question
+  asked sum of subarray in any way or asked sum of left/right pivot eqbm
+
+  note :  sum of subarray if array have negative numbers
+          sum(i to j) == k or %k = 0 we use hashmap here:
+                template here: ith index tak ka sum/product nikaalo and fir divide it
+                               into two parts , one part will satisfy condition and store
+                               other part in your hashmap (current prefix-old prefix=k)
+
+                               for %k==0 red%k is same as sum%k then condition true bcoz
+                               logic says if diff before = diff after condition b/w is satisfied
+
+
+          shortest window with sum >=k use deque
+
+          Range sum (hard) sum b/w left and right -  we use merge sort on prefix array
+
+  prefix pattern : prefix[i] = prefix[i-1] + arr[i-1] while prefix[0] = 0
+  suffix pattern : suffix[i] = suffix[i+1] + arr[i+1] while suffix[end] = 0 
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
