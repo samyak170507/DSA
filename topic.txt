@@ -121,6 +121,13 @@
 
   prefix pattern : prefix[i] = prefix[i-1] + arr[i-1] while prefix[0] = 0
   suffix pattern : suffix[i] = suffix[i+1] + arr[i+1] while suffix[end] = 0 
+
+#MERGE INTERVAL
+
+ range/interval should be given
+ imp keywords : overlap , conflict , merge , freetime , simultaneous usage , rooms , load , cpu , meetings 
+
+ note : remember shop exam we have to reconstruct it to stop overlap
   
 
   
