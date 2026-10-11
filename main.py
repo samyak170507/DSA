@@ -1,22 +1,14 @@
-class Node:
+n = int(input())
 
-    def __init__(self,value):
+for i in range(n):
 
-        self.value = value
-        self.next = None
+    req, curr, price = map(int, input().split())
 
+    temp = req-curr
 
-n1 = Node(10)
-n2 = Node(20)
-n3 = Node(30)
+    if temp <0 : 
+        print(req*price)
 
-n1.next = n2
-n2.next = n3
+    else:
+        print(temp*price)
 
-head = n1
-curr = head
-
-while curr:
-    print(curr.value)
-    curr = curr.next
-    
