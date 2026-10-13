@@ -127,7 +127,12 @@
  range/interval should be given
  imp keywords : overlap , conflict , merge , freetime , simultaneous usage , rooms , load , cpu , meetings 
 
- note : remember shop exam we have to reconstruct it to stop overlap
+ note : remember shop example we have to reconstruct it to stop overlap and it should be sorted from start
+
+ merge condition : end1 > start2 and end1 = max(end1,end2)
+
+ 
+
   
 
   
