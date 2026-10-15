@@ -131,7 +131,21 @@
 
  merge condition : end1 > start2 and end1 = max(end1,end2)
 
+
+#STACK PATTERN
+
+ basic : first in last out
+
+ flowchart : items given (array and strings) , left to right dekhna or do work with most recent element
+             
+             or matching/canceling/cleaning/reverse 
+
+ types of stack : 1.simple stack  2.Monotonic stack(increasing or decreasing)  3.Greedy stack (inc/dec on condition)
+        
+
  
+
+
 
   
 
