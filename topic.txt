@@ -141,6 +141,16 @@
              or matching/canceling/cleaning/reverse 
 
  types of stack : 1.simple stack  2.Monotonic stack(increasing or decreasing)  3.Greedy stack (inc/dec on condition)
+
+ template : I1 I2 I3 I4 make decision when and what to pop 
+                                      when to push and then store result
+
+ problem type : next/prev and smaller/greater make all PnC for this (keyword: most recent item)
+
+
+
+ 
+
         
 
  

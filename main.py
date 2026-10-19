@@ -1,14 +1,11 @@
-n = int(input())
+n = input("enter a string: ")
 
-for i in range(n):
+stack = []
 
-    req, curr, price = map(int, input().split())
+for i in range(len(n)):
 
-    temp = req-curr
+    stack.append(n[i])
 
-    if temp <0 : 
-        print(req*price)
-
-    else:
-        print(temp*price)
+s = ""
+ 
 
