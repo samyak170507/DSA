@@ -22,4 +22,4 @@ When answers to coding challenges grow exceptionally large, platforms require ca
 • Binary Exponentiation (Fast Power): Computes \((a^b) \pmod m\) in \(O(\log b)\) instead of a linear loop. It breaks the power down using binary representation (e.g., a¹³ = a⁸ × a⁴ × a¹).
 • Modular Multiplicative Inverse: Division is not directly defined in modular arithmetic. To calculate \((a / b) \pmod m\), you compute \((a \times b^{-1}) \pmod m\).
 	• Fermat's Little Theorem: If m is prime, \(b^{-1} \equiv b^{m-2} \pmod m\). It is easily calculated via binary exponentiation.
-	• Extended Euclidean Method: If m is composite but \(\gcd(b, m) = 1\), the inverse can be extracted via bx + my = 1.
+	• Extended Euclidean Method: If m is composite but \(\gcd(b, m) = 1\), the inverse can be extracted via bx + my = 1.  
